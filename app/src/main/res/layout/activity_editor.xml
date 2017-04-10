@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for the editor -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditorActivity">
+
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/category_overview"
+            style="@style/CategoryStyle" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="vertical">
+
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/edit_product_name"
+                android:hint="Product Name"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+            <!-- Breed field -->
+            <EditText
+                android:id="@+id/edit_product_brand"
+                android:hint="Product Brand"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+            <EditText
+                android:id="@+id/edit_product_price"
+                android:hint="Product Price In Cents"
+                android:inputType="number"
+                style="@style/EditorFieldStyle" />
+
+            <EditText
+                android:id="@+id/edit_product_quantity"
+                android:hint="Units of Product Currently In Stock"
+                android:inputType="number"
+                style="@style/EditorFieldStyle" />
+
+            <EditText
+                android:id="@+id/edit_product_image"
+                android:hint="Enter photo file"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+            <EditText
+                android:id="@+id/edit_supplier_name"
+                android:hint="Supplier Name"
+                android:inputType="textCapWords"
+                style="@style/EditorFieldStyle" />
+
+            <EditText
+                android:id="@+id/edit_supplier_phone"
+                android:hint="Supplier Phone Number"
+                android:inputType="phone"
+                style="@style/EditorFieldStyle" />
+
+            <EditText
+                android:id="@+id/edit_supplier_email"
+                android:hint="Supplier Email Address"
+                android:inputType="textEmailAddress"
+                style="@style/EditorFieldStyle" />
+
+            <TextView
+                android:text="(All Fields Required)"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Add Product" />
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
